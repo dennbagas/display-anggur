@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-skyblue.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-url-hash@0.1.5/dist/js/splide-extension-url-hash.min.js">
+        </script>
+        <style>
+            body,
+            html {
+                height: 100%;
+                margin: 0;
+                background-color: black;
+            }
+
+            img {
+                height: 100vh;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+        <title>Anggur</title>
+    </head>
+
+    <body>
+        <div id="splide" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide" data-splide-hash="slide01">
+                        <img src="https://drive.google.com/uc?export=view&id=1Gsz9Y4nDyfBNCsjtTFmZVb2iEfrVbUwB" />
+                    </li>
+                    <li class="splide__slide" data-splide-hash="slide02">
+                        <img src="https://drive.google.com/uc?export=view&id=1D1VbTKvIQFHBWy1kwkKNPwK5EL49e-zH" />
+
+                    </li>
+                    <li class="splide__slide" data-splide-hash="slide03">
+                        <img src="https://drive.google.com/uc?export=view&id=1RnqPqIPZORjTNqjeEkbtuoBiowyWMBRQ" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                new Splide('#splide', {
+                    type: 'loop',
+                    height: '100vh',
+                    width: 'auto',
+                    trimSpace: false,
+                    focus: 'center'
+                }).mount(window.splide.Extensions);
+            });
+        </script>
+    </body>
+
+</html>
